@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eval.SimpleInjector.Prompt", "Eval.SimpleInjector.Prompt\Eval.SimpleInjector.Prompt.csproj", "{EE0389F9-EC91-4472-90BF-7B0AFF0C4147}"
 EndProject
@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{6CD88431-8
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eval.Autofac.Prompt", "Eval.Autofac.Prompt\Eval.Autofac.Prompt.csproj", "{2E68AB5C-6836-4A39-BD32-A47922B364D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,8 +34,15 @@ Global
 		{6DD79E08-8972-4F9E-9969-D70AFCA45B81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DD79E08-8972-4F9E-9969-D70AFCA45B81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DD79E08-8972-4F9E-9969-D70AFCA45B81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E68AB5C-6836-4A39-BD32-A47922B364D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E68AB5C-6836-4A39-BD32-A47922B364D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E68AB5C-6836-4A39-BD32-A47922B364D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E68AB5C-6836-4A39-BD32-A47922B364D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6E05E12-FDF9-4AF3-A10A-6DEB06841B0E}
 	EndGlobalSection
 EndGlobal

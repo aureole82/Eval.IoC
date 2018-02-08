@@ -33,3 +33,6 @@ public interface IContainer : IDisposable
 Take a glimpse on my implementations inside this repository. I provide one for the following IoC containers (all NuGet packages):
 * DryIoc: [Documentation](https://bitbucket.org/dadhi/dryioc/wiki/Home), [NuGet](https://www.nuget.org/packages/DryIoc/)
 * SimpleInjector: [Documentation](https://simpleinjector.readthedocs.io/en/latest/index.html), [NuGet](https://www.nuget.org/packages/SimpleInjector/)
+
+* Autofac: [Documentation](http://autofac.readthedocs.io/en/latest/getting-started/index.html), [NuGet](https://www.nuget.org/packages/Autofac/) <br />
+*Don't like Autofac: Has no registration verification and is less flexible than the other two IoC containers. The implicit Dispose() on all IDisposable implementors is missing.)*
