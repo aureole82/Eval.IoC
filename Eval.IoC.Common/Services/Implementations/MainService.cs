@@ -32,9 +32,10 @@ namespace Eval.IoC.Common.Services.Implementations
 
         public void SayHello()
         {
+            _logger.Log($"{nameof(MainService)}.{nameof(SayHello)}()");
             foreach (var service in _services)
             {
-                Console.WriteLine(service.GetGreting());
+                Console.WriteLine(service.GetGreeting());
             }
         }
 

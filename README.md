@@ -5,7 +5,7 @@ Don’t surrender! There are some principles you should follow to live long and 
 
 1. Always use constructor injection. Then it’s easy to inject mocks in your unit tests and let inject concrete instances by your IoC container at run-time. I know other patterns (like autowiring of properties) are tempting like paradise but will be confusing and error-prone very soon.
 2. Never ever expose your IoC as a public global singleton where everybody can ask for instances. That would end up in an unresolvable dependency on your dependency injection. Just create the container and register all instances once at application startup and expose the necessary controllers / view models / factories (by eager or lazy loading). The IoC should be nothing more than a local variable in your startup method.
-3. My personal recommendation: Consider your IoC container as a service like all the services you register it inside. E.g. cast your needs into an interface and hide the concrete IoC instance behind it. To state it clear, just must call it like this `IContainer ioc = new ContainerWrapper();`. By working with an interface only it’s easy to replace your concrete IoC container later on.
+3. My personal recommendation: Consider your IoC container as a service like all the services you register it inside. E.g. cast your needs into an interface and hide the concrete IoC instance behind it. To state it clear, you should call it like this `IContainer ioc = new ContainerWrapper();`. Using just an interface makes easy to replace your concrete IoC container later on.
 
 And so do I, here’s my `IContainer`:
 

@@ -2,6 +2,6 @@
 {
     public interface ILanguageService
     {
-        string GetGreting();
+        string GetGreeting();
     }
 }

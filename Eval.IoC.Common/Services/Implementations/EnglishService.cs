@@ -23,9 +23,9 @@ namespace Eval.IoC.Common.Services.Implementations
 
         #region ILanguageService implementation.
 
-        public string GetGreting()
+        public string GetGreeting()
         {
-            _logger.Log($"{nameof(EnglishService)}.{nameof(GetGreting)}()");
+            _logger.Log($"{nameof(EnglishService)}.{nameof(GetGreeting)}()");
             return "Hello World!";
         }
 
